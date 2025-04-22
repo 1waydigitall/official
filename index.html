@@ -1,0 +1,481 @@
+<?php
+include "connection.php";
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!--BootStrap-->
+    <script src="./Javascript/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="protfolio.css"> -->
+  </head>
+<style>
+  body {
+     background-color: #090d19;
+     color: rgb(255, 255, 255);
+     font-family: 'Cormorant SC', serif;
+     background-image: url(BG.jpg);
+     background-size: contain;
+     background-repeat: no-repeat;
+      overflow-x: hidden;
+ }
+ label{
+  color:  rgb(255, 255, 112);
+ }
+
+ @media screen and (min-width: 975px) {
+  .col-7 {
+    width: 30%;
+    
+  }
+   /**************************Body*************/
+ body {
+     background-color: #090d19;
+     color: rgb(255, 255, 255);
+     font-family: 'Cormorant SC', serif;
+     background-image: url(BG.jpg);
+     background-size: contain;
+     background-repeat: no-repeat;
+      overflow-x: hidden;
+ }
+
+ #headunderline {
+     height: 2px;
+     background-color: yellow;
+     width: 100%;
+
+ }
+
+ /**************************Navication******************/
+ nav{
+    position: fixed;
+    overflow: hidden;
+ }
+ .navbar {
+     background-color: #090d19;
+     background-image: url(BG.jpg);
+     z-index: 1;
+ }
+#logo5{
+    color: yellow;
+    font-size: x-large;
+}
+ .navbar ul {
+     display: flex;
+     margin-left: 5%;
+     list-style: none;
+ }
+
+ .navbar ul li {
+     margin-left: 15px;
+     background-size: contain;
+     box-shadow: -30px 10px 30px #17203a;
+     font-size: larger;
+     margin-top: 3%;
+     margin-left: 10%;
+ }
+
+ .navbar ul li a:hover {
+     text-decoration-color: yellow;
+     color: yellow;
+     font-size: 20px;
+     font-weight: 800;
+     font-size: x-large;
+ }
+
+ 
+
+ /*****************************Home************************/
+ .container {
+     margin-top: 9%;
+ }
+
+ #name {
+     color: rgb(255, 255, 112);
+ }
+
+ #home {
+     color: rgb(255, 255, 112);
+ }
+
+ .homeicon ul li {
+     list-style-type: none;
+     display: inline;
+ }
+
+ .homeicon ul li i {
+     color: rgb(255, 255, 112);
+     font-size: 23px;
+ }
+
+ .homeicon ul li i:hover {
+     color: white;
+     font-size: 30px;
+ }
+
+
+ /****************************about**************************/
+ #about {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-top: 15%;
+ }
+
+ #aboutimg {
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ #aboutdb {
+     background-color: yellow;
+     border: none;
+     color: rgb(255, 255, 255);
+     padding: 8px 16px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 6px 2px;
+     margin-top: 10px;
+     margin-left: 60px;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     font-weight: bolder;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ #aboutdb {
+     background-color: #090d19;
+     color: #ffffff;
+     border: 2px solid rgb(255, 255, 255);
+
+ }
+
+ #aboutdb:hover {
+     background-color: rgb(255, 255, 78);
+     color: rgb(2, 2, 2);
+ }
+
+ .col-sm-8 span {
+     color: rgb(245, 245, 168);
+     font-weight: 550;
+ }
+
+ .col-sm-8 ul {
+     list-style-type: none;
+ }
+
+ 
+ /*************************service*************************/
+ #service {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-bottom: -50%;
+ }
+
+ #e {
+     background-color: #090d19;
+     border: 1px solid #17203a;
+     box-shadow: -30px 10px 50px #17203a;
+     margin-top: 9%;
+ }
+
+ .card:hover {
+     color: rgb(255, 255, 112);
+ }
+
+ .row {
+     display: flex;
+ }
+
+ .card i {
+     font-size: 110px;
+     color: #17203a;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     margin-left: 25%;
+ }
+
+ .card i:hover {
+     color: rgb(255, 255, 112);
+ }
+
+ .card h3 {
+     color: rgb(126, 116, 116);
+     font-weight: bolder;
+ }
+
+ .card p span {
+     color: rgb(255, 255, 112);
+ }
+
+ 
+
+ /****************************MySkill***********************/
+ #MySkills {
+     color: rgb(255, 255, 112);
+     margin-bottom: 20%;
+     text-align: center;
+ }
+
+ #d {
+     padding-top: 20px;
+     background-color: #090d19;
+     border: 3px solid #17203a;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ .progress {
+     width: 100%;
+     height: 3px;
+     margin-top: 30px;
+     background-color: #17203a;
+ }
+
+ 
+
+ /**************************Resume************************/
+ #Resume {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-bottom: -60px;
+     
+ }
+
+ .vl {
+     border-left: 2px solid rgb(126, 116, 116);
+     height: 550px;
+ }
+
+ #resumeicon {
+     margin-left: 21%;
+     flex-flow: row; 
+     color: #17203a; 
+     font-size: x-large; 
+ }
+ 
+
+ /**********************Portfolio***************************/
+ #protfolio {
+    text-align: center;
+    color: rgb(255, 255, 112);
+ }
+#ef {
+    width: 300px;
+    height: 260px;
+    margin-top: 10%;
+    background-color: #090d19;
+    border: 3px solid #17203a;
+    box-shadow: -30px 10px 50px #17203a;
+}
+ 
+ /********************blog*********************************/
+ /*#blog {
+     text-align: center;
+     color: rgb(255, 255, 112);
+     margin-top: 70px;
+ }
+*/
+ /**********************Contact***********************************/
+ #contact {
+     text-align: center;
+     color: rgb(255, 255, 112);
+ }
+
+ .vlc {
+     border-left: 2px solid rgb(126, 116, 116);
+     height: 400px;
+ }
+
+ #say {
+     margin-left: 20%;
+     margin-top: 10%;
+ }
+
+ #exampleInputEmail1 {
+     width: 77%;
+     border: solid #17203a;
+     height: 30px;
+     margin-top: 1%;
+     margin-left: 7%;
+ }
+
+ #exampleFormControlTextarea1 {
+     width: 77%;
+     border: solid #17203a;
+     margin-top: 8%;
+     margin-left: 7%;
+ }
+
+ #mesbot {
+     background-color: yellow;
+     border: none;
+     color: rgb(255, 255, 255);
+     padding: 4px px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     margin-top: 1%;
+     margin-left: 30%;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     font-weight: bolder;
+     box-shadow: -30px 10px 50px #17203a;
+ }
+
+ #mesbot {
+     background-color: #090d19;
+     color: #ffffff;
+     border: 2px solid rgb(255, 255, 255);
+
+ }
+
+ #mesbot:hover {
+     background-color: rgb(255, 255, 78);
+     color: rgb(2, 2, 2);
+ }
+ #coninfo{
+    flex-flow: row; 
+    margin-left: 70px; 
+    color: #17203a;
+     font-size: xx-large;
+    margin-bottom: 0px;
+ }
+ #says{
+     color:rgb(255, 255, 78);
+     margin-left: 8%;
+ }
+ .vlc p{
+    color: rgb(170, 158, 158);
+    margin-left: 5%;
+ }
+}
+</style>
+<body>
+        <div class = "container mt-3" >
+          <div class="row justify-content-around">
+            <div class="col-4 mt-4 mb-2">
+              <div class="instruction mb-2 fs-5" style="color: yellow; text-align: center;"><b>Complaint Registration Form</b></div>
+            </div>
+          </div>
+      <br><br>
+        <!--Student Personal Details-->
+          <div class="row g-3 mb-3">
+            <div class="col-3">
+              <label><b>Name</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="text" class="form-control bg-transparent" name = "name" placeholder="Full Name" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Contact Number</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="text" class="form-control bg-transparent" name ="contact" placeholder="Phone Number" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>IMEI 1</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="text" class="form-control bg-transparent" name ="IMEI1" placeholder="IMEI 1" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>IMEI 2</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="text" class="form-control  bg-transparent" name ="IMEI2" placeholder="IMEI 2" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Aadhar Number</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="text" class="form-control bg-transparent" name ="aadhar" placeholder="xxxxxxxxxxxx" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Missed District</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="TEXT" class="form-control bg-transparent" name ="district" placeholder="yyyyyy" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Missed Street Address</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="TEXT" class="form-control bg-transparent" name ="street" placeholder="zz,zzzzzzz,zzzz" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Pincode</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="TEXT" class="form-control bg-transparent" name ="pincode" placeholder="xxxxxx" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+              <label for="reg"><b>Missed Month</b></label>
+            </div>
+            <div class="col-7 justify-content-start">
+              <input type="TEXT" class="form-control bg-transparent" name ="month" placeholder="wwwwwwwwww" required>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-3">
+            </div>
+            <div class="col-1 justify-content-around">
+            <button class="btn btn-secondary text-light btn-outline-dark" name="insert">Submit</button>
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-1"><br></div>
+            <div class="col-2">
+        </div>
+    </form>
+<?php
+  if(isset($_POST["insert"])){
+  $Name=$_POST['name'];
+  $Contact=$_POST['contact'];
+  $IMEI1= $_POST['IMEI1'];
+  $IMEI2= $_POST['IMEI2'];
+  $Aadhar=$_POST['aadhar'];
+  $District=$_POST['district'];
+  $Street=$_POST['street'];
+  $Pincode=$_POST['pincode'];
+  $Month=$_POST['month'];
+  mysqli_query($link,"insert into report values ('$Name','$Contact','$IMEI1','$IMEI2','$Aadhar','$District','$Street','$Pincode','$Month')");
+  }
+?>
+</body>
+</html>
